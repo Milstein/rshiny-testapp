@@ -43,7 +43,7 @@ server <- function(input, output, session) {
 
 # Define UI
 ui <- fluidPage(
-  titlePanel("Testing - Hello OpenShift Shiny!"),
+  titlePanel("Hello OpenShift Shiny!"),
   sidebarLayout(
     sidebarPanel(
       sliderInput("obs", 
