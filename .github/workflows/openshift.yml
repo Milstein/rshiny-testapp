@@ -79,9 +79,11 @@ on:
   workflow_dispatch:
   repository_dispatch:
   push:
-  pull_request:
     # Edit to the branch(es) you want to build and deploy on each push.
-    branches: [ "main", "rshiny_with_ci_cd" ]
+    branches: [ "rshiny_with_ci_cd" ]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   # 🖊️ EDIT if you want to run vulnerability check on your project before deploying
