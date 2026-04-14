@@ -116,7 +116,7 @@ jobs:
 
     steps:
     - name: Check for required secrets
-      uses: actions/github-script@v6
+      uses: actions/github-script@v9
       with:
         script: |
           const secrets = {
@@ -206,7 +206,7 @@ jobs:
     - name: Install oc
       uses: redhat-actions/openshift-tools-installer@v1
       with:
-        oc: 4
+        oc: "4.21.10-linux-amd64"
         skip_cache: true
 
     # https://github.com/redhat-actions/oc-login#readme
