@@ -81,7 +81,7 @@ on:
   push:
   pull_request:
     # Edit to the branch(es) you want to build and deploy on each push.
-    branches: [ "rshiny_with_ci_cd" ]
+    branches: [ "main", "rshiny_with_ci_cd" ]
 
 jobs:
   # 🖊️ EDIT if you want to run vulnerability check on your project before deploying
