@@ -206,7 +206,7 @@ jobs:
     - name: Install oc
       uses: redhat-actions/openshift-tools-installer@v1
       with:
-        oc: "4.21.0"
+        oc: "4.21.0-linux-amd64"
         skip_cache: true
 
     # https://github.com/redhat-actions/oc-login#readme
