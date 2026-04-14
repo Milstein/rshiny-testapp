@@ -79,6 +79,7 @@ on:
   workflow_dispatch:
   repository_dispatch:
   push:
+  pull_request:
     # Edit to the branch(es) you want to build and deploy on each push.
     branches: [ "rshiny_with_ci_cd" ]
 
