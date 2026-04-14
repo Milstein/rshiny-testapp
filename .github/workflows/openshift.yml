@@ -163,7 +163,7 @@ jobs:
           }
 
     - name: Check out repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Determine app name
       if: env.APP_NAME == ''
@@ -206,6 +206,7 @@ jobs:
       uses: redhat-actions/openshift-tools-installer@v1
       with:
         oc: 4
+        skip_cache: true
 
     # https://github.com/redhat-actions/oc-login#readme
     - name: Log in to OpenShift
