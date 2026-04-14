@@ -74,6 +74,8 @@ env:
   # 🖊️ Container mount path for the PVC
   PVC_MOUNT_PATH: "/srv/data"
 
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
   workflow_dispatch:
@@ -81,9 +83,6 @@ on:
   push:
     # Edit to the branch(es) you want to build and deploy on each push.
     branches: [ "rshiny_with_ci_cd" ]
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   # 🖊️ EDIT if you want to run vulnerability check on your project before deploying
